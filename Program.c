@@ -16,6 +16,17 @@ class Program
             Console.WriteLine("0. Выйти");
 
             Console.Write("Выберите пункт меню: ");
+            int choice = Int32.Parse(Console.ReadLine());
+            switch (choice)
+            {
+            case 4:
+                int sum = (int)ch1 + (int)ch2;
+                Console.WriteLine("Сумма кодов ASCII символов " + ch1 + " и " + ch2 + " равна " + sum);
+                break;
+            default:
+                Console.WriteLine("Некорректный выбор. Попробуйте снова.");
+                break;
+            }
         }
     }
 }
