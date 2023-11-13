@@ -4,42 +4,42 @@ class Program
 {
     static void Main()
     {
-        char ch1 = ' '; // переменная для хранения первого символа
-        char ch2 = ' '; // переменная для хранения второго символа
+        char ch1 = ' '; // РїРµСЂРµРјРµРЅРЅР°СЏ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РїРµСЂРІРѕРіРѕ СЃРёРјРІРѕР»Р°
+        char ch2 = ' '; // РїРµСЂРµРјРµРЅРЅР°СЏ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РІС‚РѕСЂРѕРіРѕ СЃРёРјРІРѕР»Р°
         while (true)
         {
-            Console.WriteLine("Меню выбора:");
-            Console.WriteLine("1. Ввести первый символ");
-            Console.WriteLine("2. Ввести второй символ");
-            Console.WriteLine("3. Вывести каждый символ и его код ASCII");
-            Console.WriteLine("4. Вывести сумму кодов ASCII символов ch1 и ch2");
-            Console.WriteLine("0. Выйти");
+            Console.WriteLine("РњРµРЅСЋ РІС‹Р±РѕСЂР°:");
+            Console.WriteLine("1. Р’РІРµСЃС‚Рё РїРµСЂРІС‹Р№ СЃРёРјРІРѕР»");
+            Console.WriteLine("2. Р’РІРµСЃС‚Рё РІС‚РѕСЂРѕР№ СЃРёРјРІРѕР»");
+            Console.WriteLine("3. Р’С‹РІРµСЃС‚Рё РєР°Р¶РґС‹Р№ СЃРёРјРІРѕР» Рё РµРіРѕ РєРѕРґ ASCII");
+            Console.WriteLine("4. Р’С‹РІРµСЃС‚Рё СЃСѓРјРјСѓ РєРѕРґРѕРІ ASCII СЃРёРјРІРѕР»РѕРІ ch1 Рё ch2");
+            Console.WriteLine("0. Р’С‹Р№С‚Рё");
 
-            Console.Write("Выберите пункт меню: ");
+            Console.Write("Р’С‹Р±РµСЂРёС‚Рµ РїСѓРЅРєС‚ РјРµРЅСЋ: ");
             int choice = Int32.Parse(Console.ReadLine());
             switch (choice)
             {
             case 0:
-                return; // выход из программы
+                return; // РІС‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹
             case 1:
-                Console.Write("Введите первый символ: ");
+                Console.Write("Р’РІРµРґРёС‚Рµ РїРµСЂРІС‹Р№ СЃРёРјРІРѕР»: ");
                 ch1 = Console.ReadKey().KeyChar;
                 Console.WriteLine();
                 break;
             case 2:
-                Console.Write("Введите второй символ: ");
+                Console.Write("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕР№ СЃРёРјРІРѕР»: ");
                 ch2 = Console.ReadKey().KeyChar;
                 Console.WriteLine();
                 break;
             case 3:
-                Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
-                Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
+                Console.WriteLine("РЎРёРјРІРѕР» " + ch1 + " РёРјРµРµС‚ РєРѕРґ ASCII " + (int)ch1);
+                Console.WriteLine("РЎРёРјРІРѕР» " + ch2 + " РёРјРµРµС‚ РєРѕРґ ASCII " + (int)ch2);
             case 4:
                 int sum = (int)ch1 + (int)ch2;
-                Console.WriteLine("Сумма кодов ASCII символов " + ch1 + " и " + ch2 + " равна " + sum);
+                Console.WriteLine("РЎСѓРјРјР° РєРѕРґРѕРІ ASCII СЃРёРјРІРѕР»РѕРІ " + ch1 + " Рё " + ch2 + " СЂР°РІРЅР° " + sum);
                 break;
             default:
-                Console.WriteLine("Некорректный выбор. Попробуйте снова.");
+                Console.WriteLine("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІС‹Р±РѕСЂ. РџРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°.");
                 break;
             }
         }
