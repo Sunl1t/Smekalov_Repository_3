@@ -24,6 +24,9 @@ class Program
             case 1:
                 Console.Write("Введите первый символ: ");
                 ch1 = Console.ReadKey().KeyChar;
+            case 2:
+                Console.Write("Введите второй символ: ");
+                ch2 = Console.ReadKey().KeyChar;
                 Console.WriteLine();
                 break;
             default:
