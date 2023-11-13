@@ -16,6 +16,18 @@ class Program
             Console.WriteLine("0. Выйти");
 
             Console.Write("Выберите пункт меню: ");
+            int choice = Int32.Parse(Console.ReadLine());
+            switch (choice)
+            {
+            case 2:
+                Console.Write("Введите второй символ: ");
+                ch2 = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+                break;
+            default:
+                Console.WriteLine("Некорректный выбор. Попробуйте снова.");
+                break;
+            }
         }
     }
 }
