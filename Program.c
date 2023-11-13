@@ -24,10 +24,16 @@ class Program
             case 1:
                 Console.Write("Введите первый символ: ");
                 ch1 = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+                break;
             case 2:
                 Console.Write("Введите второй символ: ");
                 ch2 = Console.ReadKey().KeyChar;
                 Console.WriteLine();
+                break;
+            case 3:
+                Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
+                Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
                 break;
             default:
                 Console.WriteLine("Некорректный выбор. Попробуйте снова.");
