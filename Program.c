@@ -3,6 +3,14 @@ using System;
 
 class Program
 {
+
+    static void InputSecondSymbol()
+    {
+        Console.Write("Введите второй символ: ");
+        ch2 = Console.ReadKey().KeyChar;
+        Console.WriteLine();
+    }
+
     static void Main()
     {
 
@@ -34,9 +42,7 @@ class Program
                 InputFirstSymbol();
                 break;
             case 2:
-                Console.Write("Введите второй символ: ");
-                ch2 = Console.ReadKey().KeyChar;
-                Console.WriteLine();
+                InputSecondSymbol();
                 break;
             case 3:
                 Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
