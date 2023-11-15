@@ -1,5 +1,11 @@
 using System;
 
+static void PrintSymbolsAndAsciiCodes()
+{
+    Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
+    Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
+}
+
 class Program
 {
     static void Main()
@@ -20,8 +26,7 @@ class Program
             switch (choice)
             {
             case 3:
-                Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
-                Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
+                PrintSymbolsAndAsciiCodes();
                 break;
             default:
                 Console.WriteLine("Некорректный выбор. Попробуйте снова.");
