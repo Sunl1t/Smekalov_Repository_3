@@ -1,5 +1,13 @@
 using System;
 
+
+static void InputFirstSymbol()
+{
+    Console.Write("Введите первый символ: ");
+    ch1 = Console.ReadKey().KeyChar;
+    Console.WriteLine();
+}
+
 class Program
 {
     static void Main()
@@ -22,9 +30,7 @@ class Program
             case 0:
                 return; // выход из программы
             case 1:
-                Console.Write("Введите первый символ: ");
-                ch1 = Console.ReadKey().KeyChar;
-                Console.WriteLine();
+                InputFirstSymbol();
                 break;
             default:
                 Console.WriteLine("Некорректный выбор. Попробуйте снова.");
