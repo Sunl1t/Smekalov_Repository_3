@@ -2,6 +2,12 @@ using System;
 
 class Program
 {
+    static void PrintSumOfAsciiCodes()
+    {
+        int sum = (int)ch1 + (int)ch2;
+        Console.WriteLine("Сумма кодов ASCII символов " + ch1 + " и " + ch2 + " равна " + sum);
+    }
+
     static void Main()
     {
         char ch1 = ' '; // переменная для хранения первого символа
@@ -20,8 +26,7 @@ class Program
             switch (choice)
             {
             case 4:
-                int sum = (int)ch1 + (int)ch2;
-                Console.WriteLine("Сумма кодов ASCII символов " + ch1 + " и " + ch2 + " равна " + sum);
+                PrintSumOfAsciiCodes();
                 break;
             default:
                 Console.WriteLine("Некорректный выбор. Попробуйте снова.");
