@@ -15,6 +15,7 @@ class Program
         Console.Write("Введите второй символ: ");
         ch2 = Console.ReadKey().KeyChar;
         Console.WriteLine();
+    }
 
     static void PrintSymbolsAndAsciiCodes()
     {
@@ -22,10 +23,18 @@ class Program
         Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
     }
 
+    static void PrintSumOfAsciiCodes()
+    {
+        int sum = (int)ch1 + (int)ch2;
+        Console.WriteLine("Сумма кодов ASCII символов " + ch1 + " и " + ch2 + " равна " + sum);
+    }
+
+    static char ch1 = ' '; // переменная для хранения первого символа
+    static char ch2 = ' '; // переменная для хранения второго символа
+
     static void Main()
     {
-        char ch1 = ' '; // переменная для хранения первого символа
-        char ch2 = ' '; // переменная для хранения второго символа
+        
         while (true)
         {
             Console.WriteLine("Меню выбора:");
@@ -49,6 +58,8 @@ class Program
                 break;
             case 3:
                 PrintSymbolsAndAsciiCodes();
+            case 4:
+                PrintSumOfAsciiCodes();
                 break;
             default:
                 Console.WriteLine("Некорректный выбор. Попробуйте снова.");
