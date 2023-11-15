@@ -4,8 +4,6 @@ class Program
 {
     static void Main()
     {
-        char ch1 = ' '; // переменная для хранения первого символа
-        char ch2 = ' '; // переменная для хранения второго символа
         while (true)
         {
             Console.WriteLine("Меню выбора:");
