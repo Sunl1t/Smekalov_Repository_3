@@ -1,13 +1,13 @@
 using System;
 
-static void PrintSymbolsAndAsciiCodes()
-{
-    Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
-    Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
-}
-
 class Program
 {
+    static void PrintSymbolsAndAsciiCodes()
+    {
+        Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
+        Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
+    }
+
     static void Main()
     {
         char ch1 = ' '; // переменная для хранения первого символа
