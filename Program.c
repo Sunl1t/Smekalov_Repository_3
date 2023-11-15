@@ -21,23 +21,6 @@ class Program
             {
             case 0:
                 return; // выход из программы
-            case 1:
-                Console.Write("Введите первый символ: ");
-                ch1 = Console.ReadKey().KeyChar;
-                Console.WriteLine();
-                break;
-            case 2:
-                Console.Write("Введите второй символ: ");
-                ch2 = Console.ReadKey().KeyChar;
-                Console.WriteLine();
-                break;
-            case 3:
-                Console.WriteLine("Символ " + ch1 + " имеет код ASCII " + (int)ch1);
-                Console.WriteLine("Символ " + ch2 + " имеет код ASCII " + (int)ch2);
-            case 4:
-                int sum = (int)ch1 + (int)ch2;
-                Console.WriteLine("Сумма кодов ASCII символов " + ch1 + " и " + ch2 + " равна " + sum);
-                break;
             default:
                 Console.WriteLine("Некорректный выбор. Попробуйте снова.");
                 break;
