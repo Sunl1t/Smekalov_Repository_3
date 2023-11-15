@@ -1,17 +1,18 @@
 using System;
 
 
-static void InputFirstSymbol()
-{
-    Console.Write("Введите первый символ: ");
-    ch1 = Console.ReadKey().KeyChar;
-    Console.WriteLine();
-}
-
 class Program
 {
     static void Main()
     {
+
+        static void InputFirstSymbol()
+        {
+            Console.Write("Введите первый символ: ");
+            ch1 = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+        }
+
         char ch1 = ' '; // переменная для хранения первого символа
         char ch2 = ' '; // переменная для хранения второго символа
         while (true)
