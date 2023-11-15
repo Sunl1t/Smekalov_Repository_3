@@ -1,5 +1,13 @@
 using System;
 
+
+static void InputSecondSymbol()
+{
+    Console.Write("Введите второй символ: ");
+    ch2 = Console.ReadKey().KeyChar;
+    Console.WriteLine();
+}
+
 class Program
 {
     static void Main()
@@ -20,9 +28,7 @@ class Program
             switch (choice)
             {
             case 2:
-                Console.Write("Введите второй символ: ");
-                ch2 = Console.ReadKey().KeyChar;
-                Console.WriteLine();
+                InputSecondSymbol();
                 break;
             default:
                 Console.WriteLine("Некорректный выбор. Попробуйте снова.");
