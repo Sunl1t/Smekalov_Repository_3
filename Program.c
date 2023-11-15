@@ -50,6 +50,7 @@ class Program
             {
             case 0:
                 return; // выход из программы
+
             case 1:
                 InputFirstSymbol();
                 break;
@@ -58,6 +59,7 @@ class Program
                 break;
             case 3:
                 PrintSymbolsAndAsciiCodes();
+                break
             case 4:
                 PrintSumOfAsciiCodes();
                 break;
