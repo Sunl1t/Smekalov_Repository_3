@@ -1,15 +1,16 @@
 using System;
 
 
-static void InputSecondSymbol()
-{
-    Console.Write("Введите второй символ: ");
-    ch2 = Console.ReadKey().KeyChar;
-    Console.WriteLine();
-}
-
 class Program
 {
+
+    static void InputSecondSymbol()
+    {
+        Console.Write("Введите второй символ: ");
+        ch2 = Console.ReadKey().KeyChar;
+        Console.WriteLine();
+    }
+
     static void Main()
     {
         char ch1 = ' '; // переменная для хранения первого символа
